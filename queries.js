@@ -1,11 +1,11 @@
 //1
 db.restaurante.find().pretty();
 //2
-db.restaurante.find({},{"restaurant_id":1,"name":1,"borought":1,"cuisine":1});
+db.restaurante.find({},{restaurant_id:1,name:1,borought:1,cuisine:1});
 //3
 db.restaurante.find({},{"restaurant_id":1,"name":1,"borought":1,"cuisine":1,"_id":0});
 //4
-db.restaurante.find({},{"restaurant_id":1,"name":1,"borought":1,"address":{"zipcode":1},"_id":0});
+db.restaurante.find({},{"restaurant_id":1,"name":1,"borought":1,"address.zipcode":1,"_id":0});
 //5
 db.restaurante.find({},{"borought":"Bronx"});
 //6
